@@ -1,0 +1,184 @@
+html, body {
+  height: 100%;
+  background-color: #666;
+  background: linear-gradient(to bottom, #00395f 0%,#00395f 60px,#666 50%);
+  background-attachment: fixed;
+}
+
+#center {
+  margin:0 auto;
+
+  min-width: 40em;
+  max-width: 70em;
+  width: auto;
+
+  height: auto;
+  min-height: 100%;
+
+  background-color: #F5F5F5;
+
+  border: solid #000;
+  border-width: 0 1px;
+}
+
+#header {
+  margin: 0 -1px; /*Counter border on center*/
+  border-bottom: 1px solid #000;
+}
+
+#content {
+  padding: 0 1em 1em 1em;
+  margin-right: 15em;
+}
+
+.page-header {
+  background-color: #00395F;
+}
+
+li.widget {
+  list-style: none;
+}
+
+.widget h4 {
+  margin-bottom: 0.1em;
+}
+
+#headertop {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#headerbottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#hlogo {
+  height:60px;/*55 + 5*/
+  line-height: 60px;
+  font-family: 'Aldrich', sans-serif;
+  text-decoration: none;
+  margin:0 0 0 5px;
+  padding:0 0 0 50px;
+  border:0;
+  display:inline-block;
+  font-size: 24pt;
+  color:#FFF;
+}
+
+#hlogo>img {
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  -webkit-filter: drop-shadow(0px 0px 5px #DDD);
+  filter: drop-shadow(0px 0px 5px #DDD);
+}
+
+#sidebar_background {
+  position: absolute;
+  width: 15em;
+  background: #E4E5FD;
+  top: 61px;
+  bottom: 0;
+  right: 0;
+}
+#sidebar {
+  float:right;
+  width: 15em;
+}
+
+#sidebar>ul {
+  padding-left: 1em;
+}
+
+#wp-footer {
+  position:absolute;
+  padding:0;
+  bottom:0; /* stick to bottom */
+  background: #222;
+  width: 100%;
+  font-size: smaller;
+  color: #DDD;
+}
+
+#wp-footer img {
+  vertical-align: bottom;
+}
+
+.widget_search input[type="text"] {
+  background: #fcfcfc;
+  border: 1px solid #000;
+  font: bold 12px Arial,Helvetica,Sans-serif;
+  color: #000;
+  width: 150px;
+  padding: 4px 20px 4px 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 6px #000;
+  box-shadow: inset 0 0 6px #000;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+.widget_search>form {
+  position: relative;
+}
+
+.widget_search input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url('../search.png') no-repeat scroll 0 0;
+  color: transparent;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  width: 16px;
+  height: 16px;
+  margin: 4px 7px 0 0;
+}
+
+.widget_search input[type="text"]:focus {
+  width: 200px;
+  outline: none;
+  border-color: #6FF;
+}
+
+#headerbottom .menu li {
+  display: inline;
+  list-style-type: none;
+}
+
+#headerbottom .menu a {
+  cursor: pointer;
+  text-decoration: none;
+  margin: 2px 2px 0px 2px;
+  text-align: center;
+  padding: 0.3em 0.35em 0.35em 0.35em;
+  font-size: 0.8em;
+  font-weight: bold;
+  float: left;
+}
+
+#headerbottom .menu a:link, #headerbottom .menu a:visited
+{
+  color: #FFF;
+}
+
+#headerbottom .menu a:hover, #headerbottom .menu a:focus
+{
+  color: #CCC;
+}
+
+#headerbottom .menu a:active
+{
+  color: #AAA;
+}
+
+/* vim: set ts=2 sw=2 : */

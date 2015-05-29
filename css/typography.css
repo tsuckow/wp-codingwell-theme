@@ -1,0 +1,39 @@
+h2 {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid gray;`
+}
+
+.newsdetail {
+  padding: 0;
+  margin: 0 0 0.5em;
+  font: 1em monospace;
+  color: #666;
+}
+
+.newsdetail a,
+h2 a {
+  color: #C70
+}
+
+.newsdetail a:hover, .newsdetail a:focus,
+h2 a:hover, h2 a:focus {
+  color: #B60
+}
+
+.ipv6, .ipv4 {
+}
+
+.ipv6:before {
+  content: "IPv6";
+}
+
+.ipv4:before {
+  content: "IPv4";
+}
+
+#pagestats {
+  margin-left: 1em;
+}
+
+/* vim: set ts=2 sw=2 : */
