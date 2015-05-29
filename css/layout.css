@@ -1,8 +1,7 @@
 html, body {
   height: 100%;
-  background-color: #666;
-  background: linear-gradient(to bottom, #00395f 0%,#00395f 60px,#666 50%);
-  background-attachment: fixed;
+  overflow-x: hidden; /*Make background extend trick work*/
+  background-color: white;
 }
 
 #center {
@@ -14,25 +13,21 @@ html, body {
 
   height: auto;
   min-height: 100%;
+}
 
-  background-color: #F5F5F5;
-
-  border: solid #000;
-  border-width: 0 1px;
+#header_background {
+  margin: 0 -100vw; /*Extend Background*/
+  padding: 0 100vw; /*Extend Background*/
+  background-color: #00395F;
+  border-bottom: 1px solid #000;
 }
 
 #header {
-  margin: 0 -1px; /*Counter border on center*/
-  border-bottom: 1px solid #000;
 }
 
 #content {
   padding: 0 1em 1em 1em;
   margin-right: 15em;
-}
-
-.page-header {
-  background-color: #00395F;
 }
 
 li.widget {
@@ -101,6 +96,9 @@ li.widget {
   width: 100%;
   font-size: smaller;
   color: #DDD;
+
+  margin: 0 -100vw; /*Extend Background*/
+  padding: 0 100vw; /*Extend Background*/
 }
 
 #wp-footer img {

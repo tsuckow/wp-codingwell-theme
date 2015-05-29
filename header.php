@@ -16,14 +16,16 @@
 
   <body <?php body_class(); ?>>
     <div id="center">
-      <div id="header" class="page-header">
-        <a href="<?php echo home_url( '/' ); ?>" id="hlogo"><img src="//staticwell.com/images/codingwell/logo"><?php bloginfo( 'name' ); ?></a>
-        <div id="headertop"><?php dynamic_sidebar( 'Header Top' ); ?></div>
-        <div id="headerbottom"><?php dynamic_sidebar( 'Header Bottom' ); ?></div>
-        <?php
-          // Uncomment to show menu
-          //wp_nav_menu( array( 'menu' => 'Main' ) );
-        ?>
+      <div id="header_background">
+        <div id="header">
+          <a href="<?php echo home_url( '/' ); ?>" id="hlogo"><img src="//staticwell.com/images/codingwell/logo"><?php bloginfo( 'name' ); ?></a>
+          <div id="headertop"><?php dynamic_sidebar( 'Header Top' ); ?></div>
+          <div id="headerbottom"><?php dynamic_sidebar( 'Header Bottom' ); ?></div>
+          <?php
+            // Uncomment to show menu
+            //wp_nav_menu( array( 'menu' => 'Main' ) );
+          ?>
+        </div>
       </div>
   <!-- body div.center -->
 <!-- vim: set ts=2 sw=2: -->
