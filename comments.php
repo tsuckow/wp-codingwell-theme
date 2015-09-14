@@ -1,3 +1,13 @@
+<?php
+/*
+ * If the current post is protected by a password and
+ * the visitor has not yet entered the password we will
+ * return early without loading the comments.
+ */
+if ( post_password_required() ) {
+  return;
+}
+?>
 <?php if ( have_comments() ) : ?>
   <h3>Comments</h3>
   <?php wp_list_comments( array( 'type'=>'comment' ) ); ?>
@@ -14,26 +24,4 @@
   <?php endif; ?>
 <?php endif; ?>
 
-<?php // Start Comment Form ?>
-<?php if ('open' == $post->comment_status) : ?>
-  <h3>Add Comment</h3>
-  <form  method="post" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php">
-    <div>
-      <label for="author">Name<?php if ($req) echo "*"; ?></label>
-      <input type="text" name="author" id="author" />
-    </div>
-    <div>
-      <label for="email">Email<?php if ($req) echo "*"; ?></label>
-      <input type="text" name="email" id="email" />
-    </div>
-    <div>
-      <label for="comment">Comment</label>
-      <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
-    </div>
-    <div>
-      <input type="submit" value="Submit" />
-      <?php comment_id_fields(); ?>
-    </div>
-    <?php do_action('comment_form', $post->ID); ?>
-  </form>
-<?php endif;?>
+<?php comment_form(); ?>
